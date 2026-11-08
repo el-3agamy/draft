@@ -1,0 +1,47 @@
+/* 
+@keyframes infinite-scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.animate-infinite-scroll{
+    animation: infinite-scroll 25s  linear infinite ;
+}
+.animate-infinite-scroll:hover{
+    animation-play-state: paused ;
+} */
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-infinite-scroll {
+    animation: infinite-scroll 25s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+    animation-play-state: paused;
+}
+
+/* Reverse the scroll direction automatically when the page is in RTL mode */
+[dir="rtl"] .animate-infinite-scroll {
+    animation-name: infinite-scroll-rtl;
+}
+
+@keyframes infinite-scroll-rtl {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}

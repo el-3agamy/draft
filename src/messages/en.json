@@ -1,0 +1,108 @@
+{
+  "MetaData" : {
+      "websiteTitle" : "Dentist in Egypt | Dr. Mohamed Yasser " ,
+      "websiteDescription" : "Dr. Mohamed Yasser Dental Clinic in Egypt located in Gharbia governorate specifically in Bassyon & Tanta"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contacts",
+    "locations": "Locations",
+    "bookAppointment": "Appointment",
+    "Mohamed Yasser" :"Dr.Yasser" ,
+    "switchLanguage": "العربية"
+  } ,
+  "Hero" :{
+    "title" : "We Care About You and Your Health" ,
+    "subtitle" : "Your comfort, dental health, and smile are always our priority."
+  } ,
+  "About" :{
+    "titleLined" : "Dr.Mohamed Yasser." ,
+    "titleRest" : "About " ,
+    "bio" : "Dr. Mohamed Yasser is a a dedicated dentist with over 5 years of experience in dentistry, with a particular interest in orthodontics, esthetic dentistry, Digital Smile Design, and full-mouth rehabilitation.Combining clinical precision with modern dental techniques, he strives to deliver outstanding functional and aesthetic results through personalized treatment plans tailored to each patient's needs.Committed to lifelong learning and professional development, he continuously explores the latest advancements in dentistry to provide high-quality care and help every patient achieve a healthy, confident smile."
+  } ,
+  "Smile" :{
+    "titleLined" : "Smile" ,
+    "titleRest" : " Transformations." ,
+    "desc1" : "See the remarkable difference our expert dental care can make.",
+    "desc2" : "Before and after, the journey to your perfect smile begins here!",
+    "before" : "BEFORE" ,
+    "after" : "AFTER"
+  } ,
+  "Services" :{
+    "titleLined" : "Services " ,
+    "titleRest" : "We offer." ,
+    "desc1" : "See the remarkable difference our expert dental care can make.",
+    "desc2" : "Before and after, the journey to your perfect smile begins here!",
+    "serviceOne" :{
+      "tit" : "Orthodontics",
+      "desc" :"At Our Dental Centers, we provide advanced Orthodontics treatments to straighten teeth and perfect your smile comfortably and effectively. Whether with metal braces or clear aligners, our goal is to deliver outstanding results that enhance your natural beauty. Your straighter smile starts here."
+      ,
+      "discover" : "Discover More"
+    },
+    "serviceTwo" :{
+      "tit" : "Crown and Bridge",
+      "desc" : "At Perfect Smile Dental Center, we provide premium dental crown solutions to restore your teeth’s strength and natural appearance. Whether protecting a tooth after root canal treatment or enhancing your smile, we use top-quality materials and advanced techniques for durability and beauty that last. Your smile deserves the best."
+    },
+      "serviceThree" :{
+      "tit" : "Pediatric Dentistry",
+      "desc" : "At Perfect Smile Dental Center, provide Pediatric Dentistry services with the highest standards of care and comfort to ensure a positive and healthy experience for your child. Our friendly and welcoming environment helps young patients feel relaxed and confident during their visits. We use the latest techniques for early detection and treatment of dental issues, offering preventive care, fillings, and cavity treatments to maintain healthy teeth and proper oral development."
+    },
+    "serviceFour" :{
+      "tit" : "Root canal treatment",
+      "desc" : "Canal root treatment at Perfect Smile Dental Center, with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction."
+    },
+    "serviceFive" :{
+      "tit" : "Whitening",
+      "desc" : "We offer advanced Teeth whitening treatments to give you a bright, radiant smile in no time. Using the latest technology and safe, effective whitening solutions, our experts remove stains and discoloration while protecting your teeth’s natural enamel. Get ready to shine with confidence."
+    },
+    "serviceSix" :{
+      "tit" : "Wisdom tooth treatment",
+      "desc" : "Canal root treatment at Perfect Smile Dental Center, with advanced techniques to save your natural teeth and relieve pain effectively. Our expert dental team uses precise methods and modern technology to clean and disinfect the infected root canal, then seal it to prevent future issues. This treatment helps restore the function and health of your tooth, avoiding the need for extraction."
+  }
+  }
+   ,
+  "Contact" : {
+    "titleLined" : "Contact ",
+    "titleRest" : "US.",
+    "userNameInputPlaceholder" : "Enter Your Full Name",
+    "whatsAppInputPlaceholder" : "Enter Your Whatsapp Number",
+    "btn" : "Submit",
+    "sucessStatusMsg" : "Thank you! Your details have been saved.",
+    "faildStatusMsg" : "Something went wrong. Please try again."
+  } , 
+  "Locations" : {
+    "title" : "Locations." ,
+    "getDir" : "Get Directions",
+    "firstLocation" : {
+      "addressTitle" : "Bassyon City Branch", 
+      "address" : "Qaransho - Bassyon City" 
+    },
+    "secondLocation" : {
+      "addressTitle" : "Tanta City Branch", 
+      "address" : "Kharsit - Tanta City" 
+    },
+    "thirdLocation" : {
+      "addressTitle" : "Nasr City Branch", 
+      "address" : "21st - Al-Nahas - Nasr City" 
+    },
+    "fourthLocation" : {
+      "addressTitle" : "Nasr City Branch", 
+      "address" : "21st - Al-Nahas - Nasr City" 
+    },
+    "fivthLocation" : {
+      "addressTitle" : "Nasr City Branch", 
+      "address" : "21st - Al-Nahas - Nasr City" 
+    }
+  } , 
+    "ChatWidget" :{
+      "chatBotTitle" : "Chat with Assistant" ,
+      "welcomeMsg" : "Hello! 👋 Welcome to Dr. Yasser Dental Clinic. How can I help you today?",
+      "online" : "Online" ,
+      "chatBotName" : "Dental Assistant" ,
+      "whatsappConvert" : "Chat on WhatsApp" ,
+      "typing" : "Assistant is typing..." ,
+      "askPlaceholder" :"Ask a question..."
+    }
+}
