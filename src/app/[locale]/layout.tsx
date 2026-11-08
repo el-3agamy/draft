@@ -12,6 +12,7 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Navbar from "../_components/HomeComp/Navbar/Navbar";
 import Footer from "../_components/Footer/Footer";
+import { SanityLive } from "@/sanity/lib/live";
 
 const BASE_URL = "https://dr-mohamed-yasser-swart.vercel.app";
 
@@ -130,6 +131,8 @@ export default async function LocaleLayout({
           {children}
           <Footer />
         </NextIntlClientProvider>
+        <SanityLive />
+
       </body>
     </html>
   );

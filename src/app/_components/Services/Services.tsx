@@ -68,10 +68,11 @@ import {client} from '@/sanity/lib/client'
 import {SERVICES_QUERY} from '@/sanity/lib/queries'
 import {urlFor} from '@/sanity/lib/image'
 import ServiceCard from './ServiceCard/ServiceCard'
+import { sanityFetch } from '@/sanity/lib/live'
 
 export type serviceObjType = {
-  // id: string
-  id: number 
+  id: string
+  // id: number 
   title: string
   body: string
   img: string
@@ -79,8 +80,8 @@ export type serviceObjType = {
 }
 
 type SanityService = {
-  // _id: string;
-  _id: number;
+  _id: string;
+  // _id: number;
   titleAr: string;
   titleEn: string;
   descriptionAr: string;
@@ -92,8 +93,10 @@ export default async function Services() {
   const locale = await getLocale()
   const t = await getTranslations('Services')
 
-  const services = await client.fetch<SanityService[]>(SERVICES_QUERY)
-
+  // const services = await client.fetch<SanityService[]>(SERVICES_QUERY)
+  const {data} = await sanityFetch({ query :  SERVICES_QUERY}) ;
+  const services = (data ?? []) as SanityService[];
+ 
   const servicesObjArr: serviceObjType[] = services.map((service) => ({
     id: service._id,
     title: locale === 'ar' ? service.titleAr : service.titleEn,

@@ -4,23 +4,36 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import { client } from '@/sanity/lib/client';
 import { ABOUT_QUERY } from '@/sanity/lib/queries';
 import { urlFor } from '@/sanity/lib/image';
+import { sanityFetch } from '@/sanity/lib/live';
 
 export default async function About() {
+
+ type AboutContent = {
+  titleAr: string;
+  titleEn: string;
+  descriptionAr: string;
+  descriptionEn: string;
+  image?: Parameters<typeof urlFor>[0];
+};
   // const t = useTranslations("About");
   const t = await getTranslations("About");
   const locale = await getLocale(); // i add it for sanity 
 
-  const about = await client.fetch(ABOUT_QUERY);
+  // const about = await client.fetch(ABOUT_QUERY);
+  const { data } = await sanityFetch({
+  query: ABOUT_QUERY,
+});
 
-  const aboutContent = about;
+  // const aboutContent = about as AboutContent | null;
+  const about = data as AboutContent | null;
 
   const title = locale === 'ar'
-    ? aboutContent?.titleAr
-    : aboutContent?.titleEn;
+    ? about?.titleAr
+    : about?.titleEn;
 
   const description = locale === 'ar'
-    ? aboutContent?.descriptionAr
-    : aboutContent?.descriptionEn;
+    ? about?.descriptionAr
+    : about?.descriptionEn;
 
 
   return (

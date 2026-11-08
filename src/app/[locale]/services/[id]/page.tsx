@@ -18,7 +18,7 @@ export default async function Service({ params }: Props) {
   });
 
   const servicesObjArr = getServicesObjArr(t);
-  const service = servicesObjArr.find((ser) => ser.id === Number(id));
+  const service = servicesObjArr.find((ser) => ser.id === (id));
 
   return (
     <main className="min-h-screen bg-ivory-100  mt-44 p-10">
